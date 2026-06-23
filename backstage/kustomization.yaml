@@ -5,3 +5,7 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+
+images:
+  - name: ghcr.io/sdb-devops/backstage-demo
+    newTag: latest

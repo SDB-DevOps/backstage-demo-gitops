@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: ghcr.io/sdb-devops/backstage-demo:latest
+          image: ghcr.io/sdb-devops/backstage-demo
           imagePullPolicy: Always
           ports:
             - containerPort: 7007
