@@ -8,4 +8,4 @@ resources:
 
 images:
   - name: ghcr.io/sdb-devops/backstage-demo
-    newTag: 38aadef9267311b0f214aba9bde9f2e913bfbd18
+    newTag: 7084906d12143ec6c7707e096cfa6e1d4a4d8a63
