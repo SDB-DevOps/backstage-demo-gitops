@@ -22,3 +22,8 @@ spec:
           env:
             - name: NODE_ENV
               value: "production"
+            - name: K8S_SA_TOKEN          # ← app-config.yaml 里的 ${K8S_SA_TOKEN}
+              valueFrom:
+                secretKeyRef:
+                  name: backstage-secrets
+                  key: k8s-sa-token
