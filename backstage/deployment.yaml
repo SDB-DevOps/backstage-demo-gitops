@@ -22,6 +22,8 @@ spec:
           env:
             - name: NODE_ENV
               value: "production"
+            - name: K8S_CLUSTER_URL
+              value: "https://136.115.235.197:6443"
             - name: K8S_SA_TOKEN          # ← app-config.yaml 里的 ${K8S_SA_TOKEN}
               valueFrom:
                 secretKeyRef:
