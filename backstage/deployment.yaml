@@ -29,3 +29,10 @@ spec:
                 secretKeyRef:
                   name: backstage-secrets
                   key: k8s-sa-token
+            - name: AUTH_GITHUB_CLIENT_ID          # ← app-config.yaml 里的 ${K8S_SA_TOKEN}
+              value: Ov23lixpDapPXde0wVGK
+            - name: AUTH_GITHUB_CLIENT_SECRET          # ← app-config.yaml 里的 ${K8S_SA_TOKEN}
+              valueFrom:
+                secretKeyRef:
+                  name: backstage-github-secrets
+                  key: AUTH_GITHUB_CLIENT_SECRET
